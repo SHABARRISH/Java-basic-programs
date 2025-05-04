@@ -1,0 +1,203 @@
+Here are examples for each topic with explanations:
+
+---
+
+### **1. Syntax: Understanding Java Syntax and Structure**
+**Example:**
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+**Explanation:**
+- `public class Main`: Declares a class named `Main`.
+- `public static void main(String[] args)`: The main method is the entry point of a Java program.
+- `System.out.println("Hello, World!");`: Prints "Hello, World!" to the console.
+
+---
+
+
+
+### **2. Data Types**
+**Example:**
+```java
+public class DataTypesExample {
+    public static void main(String[] args) {
+        int age = 25;       // Integer type
+        float height = 5.8f; // Floating-point type
+        char grade = 'A';    // Character type
+        boolean isPassed = true; // Boolean type
+
+        System.out.println("Age: " + age);
+        System.out.println("Height: " + height);
+        System.out.println("Grade: " + grade);
+        System.out.println("Passed: " + isPassed);
+    }
+}
+```
+**Explanation:**
+- Different data types like `int`, `float`, `char`, and `boolean` are used to store specific types of values.
+
+---
+
+
+
+
+### **3. Control Statements**
+#### **if and if-else**
+**Example:**
+```java
+public class ControlStatements {
+    public static void main(String[] args) {
+        int number = 10;
+        if (number > 0) {
+            System.out.println("Positive number");
+        } else {
+            System.out.println("Non-positive number");
+        }
+    }
+}
+```
+**Explanation:**
+- `if` checks if a condition is true.
+- `else` executes if the condition is false.
+
+
+
+
+
+
+
+#### **switch-case**
+**Example:**
+```java
+public class SwitchExample {
+    public static void main(String[] args) {
+        int day = 3;
+        switch (day) {
+            case 1: System.out.println("Monday"); break;
+            case 2: System.out.println("Tuesday"); break;
+            case 3: System.out.println("Wednesday"); break;
+            default: System.out.println("Other day");
+        }
+    }
+}
+```
+**Explanation:**
+- `switch` selects one of many possible blocks of code to execute based on the value of `day`.
+
+---
+
+
+
+
+
+### **4. Loops**
+#### **for Loop**
+**Example:**
+```java
+public class ForLoopExample {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Number: " + i);
+        }
+    }
+}
+```
+**Explanation:**
+- Loops from `1` to `5` and prints each number.
+
+
+
+
+
+#### **while Loop**
+**Example:**
+```java
+public class WhileLoopExample {
+    public static void main(String[] args) {
+        int i = 1;
+        while (i <= 5) {
+            System.out.println("Number: " + i);
+            i++;
+        }
+    }
+}
+```
+
+**Explanation:**
+- Repeats a block of code while the condition `i <= 5` is true.
+
+
+
+
+#### **do-while Loop**
+**Example:**
+```java
+public class DoWhileExample {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            System.out.println("Number: " + i);
+            i++;
+        } while (i <= 5);
+    }
+}
+```
+**Explanation:**
+- Executes the code block once before checking the condition.
+
+---
+
+
+
+### **5. Arrays**
+#### **Single-Dimensional Array**
+**Example:**
+```java
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40};
+        for (int number : numbers) {
+            System.out.println(number);
+        }
+    }
+}
+```
+**Explanation:**
+- `int[] numbers` is a single-dimensional array storing integers.
+- A for-each loop is used to iterate through the array.
+
+
+
+
+
+#### **Multi-Dimensional Array**
+**Example:**
+```java
+public class MultiDimensionalArray {
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+**Explanation:**
+- `int[][] matrix` is a multi-dimensional array (2D array).
+- Nested loops are used to iterate through rows and columns of the array.
+
+---
+
+These examples provide a solid foundation for understanding Java's basic concepts and their practical applications.
